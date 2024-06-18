@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="miko.png" type="image/png">
+    <style>
+        /* Add animation keyframes for fade-in */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Apply fade-in animation to header, section, and nav elements */
+        header, section, nav {
+            animation: fadeIn 1s ease-out;
+        }
+
+        /* Reset some default browser styles */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: url('space-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+            color: #fff;
+            text-align: center;
+            padding: 2em 0;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.2s ease; /* Add transition */
+        }
+
+        header h1:hover {
+            transform: scale(1.1); /* Slightly scale up on hover */
+        }
+
+        header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            transition: transform 0.2s ease; /* Add transition */
+        }
+
+        header img:hover {
+            transform: scale(1.1); /* Slightly scale up on hover */
+        }
+
+        header p {
+            transition: transform 0.2s ease; /* Add transition */
+            font-size: 1.2rem;
+            margin-top: 1rem;
+        }
+
+        header p:hover {
+            transform: scale(1.05); /* Slightly scale up on hover */
+        }
+
+        /* Hide the navigation bar */
+        nav {
+            display: none;
+        }
+
+        section {
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+            border-radius: 20px;
+            margin: 20px 0;
+            color: #ffffff; /* Text color */
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Add transitions */
+        }
+
+        /* Darken the section background color when hovering */
+        section:hover {
+            background-color: rgba(0, 0, 0, 0.8); /* Darker shade for hover effect */
+            transform: scale(1.005); /* Slightly scale up on hover */
+        }
+
+        h2 {
+            color: #ffffff;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1.5em;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #4db8ff;
+            transition: color 0.3s ease; /* Add transition*/
+        }
+
+        a:hover {
+            color: #3399ff;
+            text-decoration: underline;
+        }
+                 
+        /* Center align content */
+        .center {
+            text-align: center;
+        }
+
+        /* Add spacing between sections */
+        .section-spacing {
+            margin-top: 40px;
+        }
+        
+        /* Center align the Discord widget */
+        iframe {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+    <title>MikoInSpace - Links</title>
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="miko.png" alt="Profile Picture">
+            MikoInSpace
+        </h1>
+    </header>
+
+    <section id="links" class="section-spacing">
+        <h2>My Links</h2>
+        <ul>
+            <li>Twitter: <a href="https://x.com/mikoinspace_">https://x.com/mikoinspace_</a></li>
+            <li>YouTube: <a href="https://www.youtube.com/channel/UC6oggNOtmVxlUAoYLfvb4GQ">https://www.youtube.com/channel/UC6oggNOtmVxlUAoYLfvb4GQ</a></li>
+            <li>Discord: mikoinspace</li>
+            <li>Blog: <a href="https://mikoinspaceblog.github.io">https://mikoinspaceblog.github.io</a></li>
+            <li>Reddit: <a href="https://www.reddit.com/user/Separate-Eggplant917/">https://www.reddit.com/user/Separate-Eggplant917/</a></li>
+            <li>Steam: <a href="https://steamcommunity.com/id/MikoInSpace/">https://steamcommunity.com/id/MikoInSpace/</a></li>
+            <li>TikTok: <a href="https://www.tiktok.com/@mikoinspace">https://www.tiktok.com/@mikoinspace</a></li>
+        </ul>
+    </section>
+
+    <div class="center">
+        <p>Made with <img src="html.png" alt="HTML Icon" height="1%" width="1%"> by <a href="https://github.com/mikoinspace">MikoInSpace</a></p>
+    </div>
+</body>
+</html>
